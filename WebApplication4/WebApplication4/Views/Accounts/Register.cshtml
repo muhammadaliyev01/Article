@@ -1,0 +1,91 @@
+﻿@{
+    Layout = "_AccountLayout.cshtml";
+}
+<div>
+    <form asp-area="" asp-controller="accounts" asp-action="register" method="post">
+        <div class="d-flex flex-column flex-root">
+            <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed"
+                 style="background-image: url(../../wwwroot/media/illustrations/sigma-1/14.png)">
+                <div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
+                    <a href="/jet-html-pro/?page=index" class="mb-12"></a>
+                    <div class="w-lg-600px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
+
+                        <form class="form w-100" novalidate="novalidate" data-kt-redirect-url="/jet-html-pro/?page=authentication/sign-in/basic" id="kt_sign_up_form">
+                            <div class="mb-10 text-center">
+                                <h1 class="text-dark mb-3">
+                                    Create an Account
+                                </h1>
+                            </div>
+                            <div class="row fv-row mb-7">
+                                <div class="col-xl-6">
+                                    <label class="form-label fw-bold text-dark fs-6">First Name</label>
+                                    <input class="form-control form-control-lg form-control-solid"  type="text" placeholder="" name="first-name" autocomplete="off" />
+                                </div>
+                                <div class="col-xl-6">
+                                    <label class="form-label fw-bold text-dark fs-6">Last Name</label>
+                                    <input class="form-control form-control-lg form-control-solid"  type="text" placeholder="" name="last-name" autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="fv-row mb-7">
+                                <label class="form-label fw-bold text-dark fs-6">Email</label>
+                                <input class="form-control form-control-lg form-control-solid" type="email" placeholder="" name="email" autocomplete="off" />
+                            </div>
+                            <div class="mb-10 fv-row" data-kt-password-meter="true">
+                                <div class="mb-1">
+                                    <label class="form-label fw-bold text-dark fs-6">
+                                        Password
+                                    </label>
+                                    <div class="position-relative mb-3">
+                                        <input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="password" autocomplete="off" />
+
+                                        <span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
+                                            <i class="bi bi-eye-slash fs-2"></i>
+                                            <i class="bi bi-eye fs-2 d-none"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3" data-kt-password-meter-control="highlight">
+                                        <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+                                        <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+                                        <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+                                        <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px"></div>
+                                    </div>
+                                </div>
+                                <div class="text-muted">
+                                    Use 8 or more characters with a mix of letters, numbers & symbols.
+                                </div>
+                            </div>
+                            <div class="fv-row mb-10">
+                                <label class="form-check form-check-custom form-check-solid form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="toc" value="1" />
+                                    <span class="form-check-label fw-semibold text-gray-700 fs-6">
+                                        I Agree <a href="#" class="ms-1 link-primary">Terms and conditions</a>.
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <div class="mt-8">
+                                    <input type="submit" class="btn btn-success" style="width:100%;" value="Ro'yxatdan o'tish" />
+                                </div>
+                                <div class="mt-8 mb-8">
+                                    <a class="btn btn-primary" style="width:100%;" asp-controller="accounts" asp-action="login">
+                                        <span class="svg-icon svg-icon-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="0" y="0" width="24" height="24" />
+                                                    <rect fill="#000000" opacity="0.3" transform="translate(9.000000, 12.000000) rotate(-270.000000) translate(-9.000000, -12.000000) " x="8" y="6" width="2" height="12" rx="1" />
+                                                    <path d="M20,7.00607258 C19.4477153,7.00607258 19,6.55855153 19,6.00650634 C19,5.45446114 19.4477153,5.00694009 20,5.00694009 L21,5.00694009 C23.209139,5.00694009 25,6.7970243 25,9.00520507 L25,15.001735 C25,17.2099158 23.209139,19 21,19 L9,19 C6.790861,19 5,17.2099158 5,15.001735 L5,8.99826498 C5,6.7900842 6.790861,5 9,5 L10.0000048,5 C10.5522896,5 11.0000048,5.44752105 11.0000048,5.99956624 C11.0000048,6.55161144 10.5522896,6.99913249 10.0000048,6.99913249 L9,6.99913249 C7.8954305,6.99913249 7,7.89417459 7,8.99826498 L7,15.001735 C7,16.1058254 7.8954305,17.0008675 9,17.0008675 L21,17.0008675 C22.1045695,17.0008675 23,16.1058254 23,15.001735 L23,9.00520507 C23,7.90111468 22.1045695,7.00607258 21,7.00607258 L20,7.00607258 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(15.000000, 12.000000) rotate(-90.000000) translate(-15.000000, -12.000000) " />
+                                                    <path d="M16.7928932,9.79289322 C17.1834175,9.40236893 17.8165825,9.40236893 18.2071068,9.79289322 C18.5976311,10.1834175 18.5976311,10.8165825 18.2071068,11.2071068 L15.2071068,14.2071068 C14.8165825,14.5976311 14.1834175,14.5976311 13.7928932,14.2071068 L10.7928932,11.2071068 C10.4023689,10.8165825 10.4023689,10.1834175 10.7928932,9.79289322 C11.1834175,9.40236893 11.8165825,9.40236893 12.2071068,9.79289322 L14.5,12.0857864 L16.7928932,9.79289322 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.500000, 12.000000) rotate(-90.000000) translate(-14.500000, -12.000000) " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        Kirish
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
